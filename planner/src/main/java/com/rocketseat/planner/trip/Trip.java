@@ -49,7 +49,7 @@ public class Trip {
         this.isConfirmed = false;
         this.ownerEmail = data.owner_email();
         this.ownerName = data.owner_name();
-        this.startsAt = LocalDateTime.parse(data.starts_at(), DateTimeFormatter.ISO_DATE_TIME); // Corrected method chaining
-        this.endsAt = LocalDateTime.parse(data.ends_at(), DateTimeFormatter.ISO_DATE_TIME); // Corrected method chaining
+        this.startsAt = LocalDateTime.parse(data.starts_at(), DateTimeFormatter.ISO_DATE_TIME);
+        this.endsAt = LocalDateTime.parse(data.ends_at(), DateTimeFormatter.ISO_DATE_TIME);
     }
 }
